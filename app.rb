@@ -45,7 +45,7 @@ class App < Sinatra::Base
         when @operation == "multiply" 
           (@num1 * @num2)
         when @operation == "divide" 
-          (@num1 % @num2)
+          (@num1 / @num2)
       end 
   end 
     

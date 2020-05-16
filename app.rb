@@ -15,7 +15,6 @@ class App < Sinatra::Base
     @phrase = params[:phrase]
     @num = params[:number].to_i 
     @number.times("#{@phrase}")
-    str
   end 
   
   get '/:operation/:number1' do 

@@ -39,7 +39,7 @@ class App < Sinatra::Base
     
       case @operation
         when  "add" 
-          "#{@num1 + @num2}"
+          (@num1 + @num2).to_s
         when "subtract" 
           "#{@num1 - @num2}"
         when "multiply" 

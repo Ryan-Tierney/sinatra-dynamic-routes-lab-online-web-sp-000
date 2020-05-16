@@ -37,17 +37,15 @@ class App < Sinatra::Base
     @num1 = params[:number1].to_i
     @num2 = params[:number 2].to_i
     
-      case @operation
-        when  "add" 
-          (@num1 + @num2).to_s
-        when "subtract" 
-          (@num1 - @num2).to_s
-        when "multiply" 
-          (@num1 * @num2).to_s
-        when "divide" 
-          (@num1 / @num2).to_s
-      end 
-    end 
+    case @operation
+      when  "add" 
+        (@num1 + @num2).to_s
+      when "subtract" 
+        (@num1 - @num2).to_s
+      when "multiply" 
+        (@num1 * @num2).to_s
+      when "divide" 
+        (@num1 / @num2).to_s
+    end
   end 
-    
-end
+end 

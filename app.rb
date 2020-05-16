@@ -11,15 +11,14 @@ class App < Sinatra::Base
     (@square**2).to_s
   end 
   
-  get '/say/:number/:phrase' do 
-    @phrase = params[:phrase]
-    @num = params[:number].to_i 
-    @number.times do 
-        final_string = ""
-        final_string += @phrase 
-      end 
-      final_string
-  end 
+get '/say/:number/:phrase' do
+		@number = params[:number].to_i
+		@phrase = params[:phrase]
+		final_string = ""
+		@number.times do
+			 @phrase
+		end
+	end
   
   get '/say/:word1/:word2/:word3/:word4/:word5' do 
     @word1 = params[:word1]
@@ -28,7 +27,7 @@ class App < Sinatra::Base
     @word4 = params[:word4]
     @word5 = params[:word5]
      
-     @word1 + @word2 + @word3 + @word4 + @word5.
+     "#{@word1} + #{@word2} + #{@word3} + #{@word4} + #{@word5}."
    end 
    
   get '/:operation/:number1' do 
